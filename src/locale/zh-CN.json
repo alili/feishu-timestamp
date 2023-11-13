@@ -1,0 +1,35 @@
+{
+  "tabs": {
+    "transform": "转换",
+    "operation": "快速调整"
+  },
+  "label": {
+    "force": "覆写模式",
+    "adjust": "操作",
+    "timePreview": "预览",
+    "weeks": "周",
+    "week": "星期",
+    "day": "天"
+  },
+  "source": {
+    "placeholder": "选择源字段"
+  },
+  "target": {
+    "placeholder": "创建/选择 目标字段"
+  },
+  "button": {
+    "transform": "转换"
+  },
+  "note": {
+    "forceMode": "开启覆写模式会重写目标列原值，关闭覆写模式只会在目标列为空时才会进行转换。",
+    "onlyDataTime": "请选择时间类型单元格"
+  },
+  "change": {
+    "notice": "输入「+」「-」使用快速调整功能",
+    "support": "输入格式：[+/-][num][unit]",
+    "units": "unit：[day(d)/week(w)/month(M)/year(y)/hour(h)/minute(m)/second(s)]"
+  },
+  "error": {
+    "wrong_ype": "不支持的数据类型"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "tabs": {
+    "transform": "Transform",
+    "operation": "Quick Adjust"
+  },
+  "label": {
+    "force": "Force Mode",
+    "adjust": "Operation",
+    "timePreview": "Preview",
+    "weeks": "Weeks",
+    "week": "Week",
+    "day": "Day"
+  },
+  "source": {
+    "placeholder": "Select Source Field"
+  },
+  "target": {
+    "placeholder": "Create/Select Target Field"
+  },
+  "button": {
+    "transform": "Transform"
+  },
+  "note": {
+    "forceMode": "Enabling Force Mode will overwrite the original values in the target column. Disabling Force Mode will only perform the transformation when the target column is empty.",
+    "onlyDataTime": "Please select cells with time types."
+  },
+  "change": {
+    "notice": "Use '+' or '-' for quick adjustments",
+    "support": "Input format: [+/-][num][unit]",
+    "units": "Supported units: [day(d)/week(w)/month(M)/year(y)/hour(h)/minute(m)/second(s)]"
+  },
+  "error": {
+    "wrongType": "Unsupported data type"
+  }
+}
