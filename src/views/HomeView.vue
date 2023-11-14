@@ -1,13 +1,14 @@
 <template lang='pug'>
-a-tabs(:active-key="activeKey" @tab-click="changeTabs")
-  a-tab-pane(key="1" :title="$t('tabs.transform')")
-    Transform
-  a-tab-pane(key="2" :title="$t('tabs.operation')")
-    Adjust
+a-spin(:loading="init" :tip="$t('loading')")
+  a-tabs(:active-key="activeKey" @tab-click="changeTabs")
+    a-tab-pane(key="1" :title="$t('tabs.transform')")
+      Transform
+    a-tab-pane(key="2" :title="$t('tabs.operation')")
+      Adjust
 </template>
 <script setup name='Home'>
   import { bitable } from '@lark-base-open/js-sdk'
-  const { currentCell } = storeToRefs(useBitable())
+  const { currentCell, init } = storeToRefs(useBitable())
   // data
   const activeKey = ref('1')
   // methods

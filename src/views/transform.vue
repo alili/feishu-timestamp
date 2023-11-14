@@ -89,7 +89,6 @@ a-form.form(layout="vertical" auto-label-width :model="fields")
   const refresh = async () => {
     await updateFieldMetaList()
     await fetchRecords()
-
     timestampFields.value = getFieldsByType([FieldType.Text, FieldType.DateTime])
     targetFields.value = getFieldsByType([FieldType.DateTime])
   }

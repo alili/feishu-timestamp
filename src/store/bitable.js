@@ -8,17 +8,24 @@ const useBitableStore = defineStore('bitabel', () => {
   const records = ref([])
   const fieldMetaList = ref([])
   const currentCell = ref({})
+  const init = ref(false)
 
   const getTable = async () => {
+    init.value = true
     table.value = await bitable.base.getActiveTable()
+    init.value = false
   }
 
   const updateFieldMetaList = async () => {
+    init.value = true
     const view = await table.value.getActiveView()
     fieldMetaList.value = await view.getFieldMetaList()
+    console.log(`fieldMetaList:`, fieldMetaList.value)
+    init.value = false
   }
 
   const fetchRecords = async () => {
+    init.value = true
     let hasMore = true
     let pageToken = ''
     let tempRecords = []
@@ -31,6 +38,7 @@ const useBitableStore = defineStore('bitabel', () => {
       tempRecords = tempRecords.concat(res.records)
     }
     records.value = tempRecords
+    init.value = false
   }
 
   const getFieldsByType = type => {
@@ -47,6 +55,7 @@ const useBitableStore = defineStore('bitabel', () => {
     getFieldsByType,
     updateFieldMetaList,
     currentCell,
+    init,
   }
 })
 

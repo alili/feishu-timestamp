@@ -23,6 +23,7 @@ declare module 'vue' {
     ASapce: typeof import('@arco-design/web-vue')['Sapce']
     ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
+    ASpin: typeof import('@arco-design/web-vue')['Spin']
     AStatistic: typeof import('@arco-design/web-vue')['Statistic']
     ATabPane: typeof import('@arco-design/web-vue')['TabPane']
     ATabs: typeof import('@arco-design/web-vue')['Tabs']
