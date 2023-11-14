@@ -47,7 +47,6 @@ a-empty(v-else)
   dayjs.extend(weekOfYear)
   dayjs.extend(dayOfYear)
   // data
-  const { t } = useI18n()
   const { table, currentCell, fieldMetaList } = storeToRefs(useBitable())
   const form = reactive({
     date: 0,
