@@ -42,8 +42,9 @@ a-form.form(layout="vertical" auto-label-width :model="fields")
   const { updateFieldMetaList, getTable, getFieldsByType, fetchRecords } = useBitable()
   const { table, records, fieldMetaList } = storeToRefs(useBitable())
   // data
-  const currentTimezone = new Date().getTimezoneOffset()
   const loading = ref(false)
+  const currentTimezone = new Date().getTimezoneOffset()
+
   const fields = reactive({
     source: '',
     target: '',

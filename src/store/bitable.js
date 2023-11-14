@@ -20,7 +20,6 @@ const useBitableStore = defineStore('bitabel', () => {
     init.value = true
     const view = await table.value.getActiveView()
     fieldMetaList.value = await view.getFieldMetaList()
-    console.log(`fieldMetaList:`, fieldMetaList.value)
     init.value = false
   }
 
