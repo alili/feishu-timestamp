@@ -12,6 +12,7 @@ declare module 'vue' {
     ACard: typeof import('@arco-design/web-vue')['Card']
     ACheckbox: typeof import('@arco-design/web-vue')['Checkbox']
     ADatePicker: typeof import('@arco-design/web-vue')['DatePicker']
+    Adjust: typeof import('./src/views/adjust.vue')['default']
     AEmpty: typeof import('@arco-design/web-vue')['Empty']
     AForm: typeof import('@arco-design/web-vue')['Form']
     AFormItem: typeof import('@arco-design/web-vue')['FormItem']

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@lark-base-open/js-sdk':
-    specifier: 0.3.5-alpha.3
-    version: 0.3.5-alpha.3
+    specifier: 0.3.5-alpha.4
+    version: 0.3.5-alpha.4
   '@vueuse/core':
     specifier: ^10.4.1
     version: 10.4.1(vue@3.3.4)
@@ -403,8 +403,8 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@lark-base-open/js-sdk@0.3.5-alpha.3:
-    resolution: {integrity: sha512-Pc+E3PQmrd732slE2c+7UVY/H4I7QSg0IpYKWvQxeWqG8TdEHmuk0+Gn/kJZDEt0PgN7+1fsgs/tPtiuGYgkBg==}
+  /@lark-base-open/js-sdk@0.3.5-alpha.4:
+    resolution: {integrity: sha512-7kJPOKk7p8ghcH7XLnK+v50BbrD73fVek4u5FgPA5cJchkfX6o/9NNg2W7st1Qi/OM3Rcme/NJUosVfS+RrKmw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:

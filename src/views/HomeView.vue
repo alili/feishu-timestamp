@@ -3,7 +3,7 @@ a-tabs(:active-key="activeKey" @tab-click="changeTabs")
   a-tab-pane(key="1" :title="$t('tabs.transform')")
     Transform
   a-tab-pane(key="2" :title="$t('tabs.operation')")
-    Change
+    Adjust
 </template>
 <script setup name='Home'>
   import { bitable } from '@lark-base-open/js-sdk'

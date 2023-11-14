@@ -41,7 +41,6 @@ a-form.form(layout="vertical" auto-label-width :model="fields")
 
   const { updateFieldMetaList, getTable, getFieldsByType, fetchRecords } = useBitable()
   const { table, records, fieldMetaList } = storeToRefs(useBitable())
-  const { t } = useI18n()
   // data
   const currentTimezone = new Date().getTimezoneOffset()
   const loading = ref(false)

@@ -14,8 +14,7 @@ const useBitableStore = defineStore('bitabel', () => {
   }
 
   const updateFieldMetaList = async () => {
-    const { viewId } = await bitable.base.getSelection()
-    const view = await table.value.getViewById(viewId)
+    const view = await table.value.getActiveView()
     fieldMetaList.value = await view.getFieldMetaList()
   }
 
