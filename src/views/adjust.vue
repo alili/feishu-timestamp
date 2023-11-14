@@ -23,8 +23,8 @@ template(v-if="showDatetime")
         :filter-option="false"
         :options="filteredAdjustMap"
         :search-delay="10"
-        @change="handleRound"
-        @search="handleRoundSearch")
+        @change="handleAdjust"
+        @search="handleSearch")
         template(#header)
           span(v-if="!changeMode") {{ $t('change.notice') }}
           template(v-else)
@@ -68,7 +68,7 @@ a-empty(v-else)
     form.date = cell.length < 11 ? cell * 1000 : cell
   })
 
-  const handleRound = () => {
+  const handleAdjust = () => {
     const { fieldId, recordId } = currentCell.value
 
     switch (form.adjust) {
@@ -105,7 +105,7 @@ a-empty(v-else)
     filteredAdjustMap.value = adjustMap
   }
 
-  const handleRoundSearch = e => {
+  const handleSearch = e => {
     if (/^[+-]/.test(e)) {
       changeMode.value = true
       const [_, operation, num = '?', unit = '{unit}'] = e.replace(/\s/g, '').match(/([+-])(\d*)([a-z]*)/)

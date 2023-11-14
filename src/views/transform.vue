@@ -82,7 +82,7 @@ a-form.form(layout="vertical" auto-label-width :model="fields")
       }
     })
 
-    const res = await table.value.setRecords(updateRecords)
+    await table.value.setRecords(updateRecords)
     loading.value = false
     refresh()
   }
